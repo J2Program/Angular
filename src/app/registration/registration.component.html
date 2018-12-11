@@ -1,0 +1,18 @@
+<h3>Confirmation of Details</h3>
+<form [formGroup]="user" (ngSubmit)="onSubmit()">
+  <p>First Name
+    <input formControlName="firstName" type="text" id="firstName"> </p>
+  <p>Last Name
+    <input formControlName="lastName" type="text" id="lastName"> </p>
+  <p>Date of Birth
+    <input formControlName="dateOfBirth" type="text" id="dateOfBirth"> </p>
+  <p>Gender
+    <input formControlName="gender" type="text" id="gender"> </p>
+  <p>Phone Number
+    <input formControlName="phoneNumber" type="text" id="phoneNumber"> </p>
+  <p>
+    <button type="submit">Next</button>
+  </p>
+</form>
+
+<app-navbutton toLocation="plandetails" buttonText="Back"></app-navbutton>

@@ -1,0 +1,27 @@
+<p>{{plan}}</p>
+
+
+<form [formGroup]="user" (ngSubmit)="onSubmit()">
+
+    <p>First Name
+        <input  formControlName="firstName"   type="text" id="firstName"/>
+    </p>
+    <p>Last Name
+        <input formControlName="lastName" type="text" name="last-name" id="last-name" />
+    </p>
+    <p>Email
+        <input formControlName="email" type="text" name="email" id="email" />
+    </p>
+    <p>Mobile
+        <input formControlName="mobile" type="text" name="mobile" id="mobile" />
+    </p>
+
+    <p>
+        <input type="submit" value="submit" />
+    </p>
+
+</form>
+
+<app-navbutton toLocation="/" buttonText="Backd"></app-navbutton>
+
+{{user.firstName}}
